@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # First thing first: 
-# Open SOFTWARE app and Go to "Software and Repo MENU" and Enable the repos that will suit my needs! (Google-Chrome/NVIDIA/Linux Firmware) and others! 
+# Open SOFTWARE app and Go to "Software and Repo MENU"
+# Enable the repos that will suit my needs! (Google-Chrome/NVIDIA/Linux Firmware) and others! 
 # Disable the AUTOMATIC UPDATES on "UPDATES PREFERENCES MENU"
 
 
