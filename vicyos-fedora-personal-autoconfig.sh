@@ -9,6 +9,7 @@
 # Enable the repos that will suit my needs! (Google-Chrome/NVIDIA/Linux Firmware) and others! 
 # Disable the AUTOMATIC UPDATES on "UPDATES PREFERENCES MENU"
 
+current_user_name="vicyos"
 
 # To update your Fedora: 
 sudo dnf check-update -y
@@ -92,6 +93,27 @@ sudo dnf group upgrade -y --with-optional Multimedia
 
 # Winff from fedora 30
 cd ramdon && sudo rpm -i winff-1.5.5-9.1.x86_64.rpm && cd ../
+
+# Samba and gufw
+sudo dnf -y install samba ufw
+
+# Install Firewall and allow Samba: 
+sudo ufw enable
+
+firewall-cmd --add-service=samba --permanent
+firewall-cmd --reload
+
+# Setup Samba
+sudo smbpasswd -a $current_user_name
+
+####################### SET UP SAMBA LATER
+
+
+
+
+
+
+
 
 
 
