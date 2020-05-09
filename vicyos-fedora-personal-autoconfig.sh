@@ -63,8 +63,9 @@ cd ../
 sudo dnf install mesa-libGLU -y
 
 # Qbittorrent:
-sudo sudo dnf install qbittorrent -y
+sudo dnf install qbittorrent -y
 
+sudo dnf install brasero -y
 
 
 
