@@ -2,6 +2,8 @@
 
 # github.com/felipendc
 
+# THIS IS A TESTING SCRIPT. IT WILL GET IMPROVED BY TIME!
+
 # First thing first: 
 # Open SOFTWARE app and Go to "Software and Repo MENU"
 # Enable the repos that will suit my needs! (Google-Chrome/NVIDIA/Linux Firmware) and others! 
@@ -70,6 +72,23 @@ sudo dnf install brasero -y
 
 
 
+# Install Clipgrab:
+
+# Step 1: Configure RPMfusion Yum Repository (It downloads RPM PKGS and its own dependencies)!
+sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+sudo dnf install -y clipgrab 
+sudo dnf install -y qwinff
+sudo dnf install -y vlc
+
+# h.254
+sudo dnf install gstreamer1-libav
+
+# Use the dnf utility to install packages that provide multimedia libraries:
+sudo dnf install -y gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
+sudo dnf install -y lame\* --exclude=lame-devel
+sudo dnf group upgrade -y --with-optional Multimedia
 
 
 
