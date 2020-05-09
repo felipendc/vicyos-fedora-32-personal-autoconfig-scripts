@@ -106,8 +106,8 @@ firewall-cmd --reload
 # Setup Samba
 sudo smbpasswd -a $current_user_name
 
-####################### SET UP SAMBA LATER
-
+# SAMBA CONIF:
+cd samba-configs && sudo cp -r living-room-smb.conf /etc/samba/smb.conf && cd ../ 
 
 
 
