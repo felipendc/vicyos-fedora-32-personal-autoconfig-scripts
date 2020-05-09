@@ -90,7 +90,8 @@ sudo dnf install -y gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-o
 sudo dnf install -y lame\* --exclude=lame-devel
 sudo dnf group upgrade -y --with-optional Multimedia
 
-
+# Winff from fedora 30
+cd ramdon && sudo rpm -i winff-1.5.5-9.1.x86_64.rpm && cd ../
 
 
 
