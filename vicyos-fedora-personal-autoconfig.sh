@@ -33,12 +33,16 @@ sudo dnf install gnome-tweaks -y
 
 ######### Set my favorite picture as background wallpaper:
 cd vicyos-background-wallpaper && 
-sudo cp -r 593985.jpg /usr/share/backgrounds/fedora-workstation && 
+sudo cp -r *.jpg /usr/share/backgrounds/fedora-workstation && 
 gsettings set org.gnome.desktop.background picture-uri "/usr/share/backgrounds/fedora-workstation/74880.jpg" && 
 cd ../
 
 # Visual Studio Code:
-sudo dnf install code
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+
+sudo dnf check-update -y && sudo dnf install code -y
 
 
 # Auto Apply Gnome Tweak Tool configs: (Will keep getting Rolling updates!) (If anything goes wrong, it'll break the System!)
