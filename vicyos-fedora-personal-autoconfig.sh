@@ -20,10 +20,11 @@ sudo dnf install gwe -y
 # Inkscape:
 sudo dnf install inkscape -y
 
-
 # Install Google Chrome: (Don't forget to enable the Google Chrome Repo on Software Settings)
 sudo dnf install google-chrome-stable -y
 
+# GNOME Tweak Tool:
+sudo dnf install gnome-tweaks -y
 
 
 
