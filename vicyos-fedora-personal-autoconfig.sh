@@ -59,6 +59,8 @@ cd vicyos-fedora32-dconf &&
 sudo rm -r ~/.config/dconf/user && cp -r user* ~/.config/dconf/ && 
 cd ../
 
+# Davici resolve won't open in Fedora 32 fix!
+sudo dnf install mesa-libGLU -y
 
 
 
