@@ -9,7 +9,9 @@
 
 
 # To update your Fedora: 
+sudo dnf check-update -y
 sudo dnf upgrade --refresh -y
+
 
 # Install the dnf-plugin-system-upgrade package if it is not currently installed:
 sudo dnf install dnf-plugin-system-upgrade -y
@@ -29,8 +31,14 @@ sudo dnf install google-chrome-stable -y
 # GNOME Tweak Tool:
 sudo dnf install gnome-tweaks -y
 
+######### Set my favorite picture as background wallpaper:
+cd vicyos-background-wallpaper && 
+sudo cp -r 593985.jpg /usr/share/backgrounds/fedora-workstation && 
+gsettings set org.gnome.desktop.background picture-uri "/usr/share/backgrounds/fedora-workstation/74880.jpg" && 
+cd ../
 
-
+# Visual Studio Code:
+sudo dnf install code
 
 
 
