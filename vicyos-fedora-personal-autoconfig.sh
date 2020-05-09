@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# github.com/felipendc
+
 # First thing first: 
 # Open SOFTWARE app and Go to "Software and Repo MENU"
 # Enable the repos that will suit my needs! (Google-Chrome/NVIDIA/Linux Firmware) and others! 
