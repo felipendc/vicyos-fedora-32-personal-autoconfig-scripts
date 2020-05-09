@@ -62,6 +62,9 @@ cd ../
 # Davici resolve won't open in Fedora 32 fix!
 sudo dnf install mesa-libGLU -y
 
+# Qbittorrent:
+sudo sudo dnf install qbittorrent -y
+
 
 
 
