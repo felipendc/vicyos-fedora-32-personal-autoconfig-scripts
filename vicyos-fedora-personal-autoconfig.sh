@@ -44,6 +44,18 @@ sudo dnf install code
 
 
 
+# Auto Apply Gnome Tweak Tool configs: (Will keep getting Rolling updates!) (If anything goes wrong, it'll break the System!)
+
+#The files altered by gnome-tweak-tool are saved at: ~/.config/dconf/user 
+#(this is the dconf database, a binary file where most user settings are #stored)
+#and various other configuration files under ~/.config (these are all text files)
+
+cd vicyos-fedora32-dconf &&
+sudo rm -r ~/.config/dconf/user && cp -r user* ~/.config/dconf/ && 
+cd ../
+
+
+
 
 
 
