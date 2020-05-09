@@ -41,9 +41,6 @@ cd ../
 sudo dnf install code
 
 
-
-
-
 # Auto Apply Gnome Tweak Tool configs: (Will keep getting Rolling updates!) (If anything goes wrong, it'll break the System!)
 
 #The files altered by gnome-tweak-tool are saved at: ~/.config/dconf/user 
