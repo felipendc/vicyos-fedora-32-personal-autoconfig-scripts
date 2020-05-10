@@ -32,7 +32,7 @@ sudo dnf install -y \
 	clipgrab \
 	qwinff \
 	vlc \
-	gstreamer1-libav \
+	gstreamer1-libav
 	
 
 
