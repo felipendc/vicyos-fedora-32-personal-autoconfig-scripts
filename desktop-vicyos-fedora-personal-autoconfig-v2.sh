@@ -81,7 +81,7 @@ cd ../
 # Set Github email and nickname:
 sudo sh ./upall/setup-git-v1.sh
 
-# Install all the necessary packages for android build environment using akhilnarang script: 
+# Install all the necessary packages for android build environment: 
 sudo sh ./android-build-environment-setup-fedora32/fedora.sh
 
 
