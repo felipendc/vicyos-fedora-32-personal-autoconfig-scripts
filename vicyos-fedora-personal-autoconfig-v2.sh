@@ -33,6 +33,7 @@ sudo dnf install -y qwinff
 sudo dnf install -y vlc 
 sudo dnf install -y gstreamer1-libav 
 sudo dnf install -y ffmpeg
+sudo dnf install -y clementine
 	
 
 
