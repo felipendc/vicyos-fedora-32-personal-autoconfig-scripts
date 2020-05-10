@@ -75,6 +75,7 @@ sudo rm -r ~/.config/dconf/user
 cp -r user* ~/.config/dconf/
 cd ../
 
+# Set Github email and nickname:
 sudo sh ./upall/setup-git-v1.sh
 
 
