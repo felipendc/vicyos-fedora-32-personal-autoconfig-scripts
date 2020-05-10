@@ -1,12 +1,23 @@
 #!/usr/bin/env bash
 #
+# 
 # SPDX-License-Identifier: GPL-3.0-only
 #
 # Script to setup an Android 10 build
 # environment for Fedora 31 / Rawhide.
 
+dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+dnf groupupdate core
+dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+dnf groupupdate sound-and-video
+dnf install rpmfusion-free-release-tainted
+dnf install rpmfusion-nonfree-release-tainted
+dnf install libdvdcss
+dnf install \*-firmware
+
 # Packages
 sudo dnf install -y \
+    @development-tools \
     autoconf213 \
     bison \
     bzip2 \
@@ -40,13 +51,41 @@ sudo dnf install -y \
     lzop \
     openssl-devel \
     java-1.8.0-openjdk-devel \
+    java-1.8.0-openjdk \
     ImageMagick \
     ncurses-compat-libs \
     schedtool \
     lzip \
     vboot-utils \
     vim \
-    android-tools #for adb and fastboot
+    android-tools \
+    syslinux-devel \
+    squashfs-tools \
+    python3-networkx \
+    python-mako \
+    ython3-mako \
+    python3 \
+    python \
+    pngcrush \
+    optipng \
+    maven \
+    lz4-libs \
+    libxml2-devel \
+    ImageMagick-c++-devel.x86_64 \
+    ImageMagick-devel.x86_64 \
+    kodi-pvr-vuplus \
+    glances \
+    byobu \
+    glances \
+    lftp \
+    gperf \
+    dpkg-dev \
+    bzip2-libs \
+    automake \
+    python3-networkx.noarch \
+    python-networkx \
+    python3-mako
+    
 
 # The package libncurses5 is not available, so we need to hack our way by symlinking the required library.
 sudo ln -s /usr/lib/libncurses.so.6 /usr/lib/libncurses.so.5

@@ -32,8 +32,8 @@ sudo dnf install -y vlc
 sudo dnf install -y gstreamer1-libav 
 sudo dnf install -y ffmpeg
 sudo dnf install -y clementine
-sudo dnf install -y android-tools
-	
+sudo dnf install -y filezilla
+sudo dnf install -y wine
 
 
 	
