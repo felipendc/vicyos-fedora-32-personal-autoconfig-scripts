@@ -75,7 +75,7 @@ sudo rm -r ~/.config/dconf/user
 cp -r user* ~/.config/dconf/
 cd ../
 
-
+sudo sh ./upall/setup-git-v1.sh
 
 
 
