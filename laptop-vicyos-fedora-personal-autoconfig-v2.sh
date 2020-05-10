@@ -18,8 +18,6 @@ sudo dnf check-update -y
 
 # dnf packages:
 sudo dnf install -y dnf-plugin-system-upgrade 
-sudo dnf install -y nvidia-driver 
-sudo dnf install -y nvidia-settings 
 sudo dnf install -y google-chrome-stable 
 sudo dnf install -y gnome-tweaks 
 sudo dnf install -y gwe 
@@ -34,6 +32,7 @@ sudo dnf install -y vlc
 sudo dnf install -y gstreamer1-libav 
 sudo dnf install -y ffmpeg
 sudo dnf install -y clementine
+sudo dnf install -y android-tools
 	
 
 
@@ -47,6 +46,7 @@ sudo yum install epel-release
 sudo yum check-update 
 sudo yum update 
 sudo yum install -y onlyoffice-desktopeditors 
+sudo yum install -y fuse-exfat
 
 
 
@@ -79,8 +79,7 @@ cd ../
 # Set Github email and nickname:
 sudo sh ./upall/setup-git-v1.sh
 
-# Install all the necessary packages for android build environment using akhilnarang script: 
-sudo sh ./android-build-environment-setup-fedora32/fedora.sh
+
 
 
 
