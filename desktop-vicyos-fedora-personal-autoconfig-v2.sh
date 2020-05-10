@@ -85,4 +85,6 @@ sudo sh ./upall/setup-git-v1.sh
 sudo sh ./android-build-environment-setup-fedora32/fedora.sh
 
 
-
+# Update
+sudo dnf check-update -y
+sudo dnf upgrade --refresh -y
