@@ -26,7 +26,9 @@ sudo dnf install -y \
     flex \
     gawk \
     gcc-c++ \
+    gcc \
     git \
+    bc \
     glibc-devel \
     glibc-static \
     libstdc++-static \
@@ -84,12 +86,21 @@ sudo dnf install -y \
     automake \
     python3-networkx.noarch \
     python-networkx \
-    python3-mako
+    python3-mako \
+    rsync \
+    glibc.i686 \
+    libXrender.i686 \
+    libsx-devel \
+    perl-Switch \
+    libncurses.so.5 \
+    ncurses-libs \
+    libtinfo.so.5
     
-
+    
+# (No need to creat a symbolic link because libncurses5 is now available on dnf ) Testing!
 # The package libncurses5 is not available, so we need to hack our way by symlinking the required library.
-sudo ln -s /usr/lib/libncurses.so.6 /usr/lib/libncurses.so.5
-sudo ln -s /usr/lib/libncurses.so.6 /usr/lib/libtinfo.so.5
+#sudo ln -s /usr/lib/libncurses.so.6 /usr/lib/libncurses.so.5
+#sudo ln -s /usr/lib/libncurses.so.6 /usr/lib/libtinfo.so.5
 
 # Repo
 echo "Installing Git Repository Tool"
