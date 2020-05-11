@@ -39,7 +39,7 @@ sudo dnf install -y wine
 sudo dnf install -y deepin-screenshot
 sudo dnf install -y simplescreenrecorder
 sudo dnf install -y deepin-screen-recorder
-	
+sudo dnf install VirtualBox	
 
 # YUM PKGS:
 
