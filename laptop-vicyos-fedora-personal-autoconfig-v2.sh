@@ -22,7 +22,6 @@ sudo dnf check-update -y
 sudo dnf install -y dnf-plugin-system-upgrade 
 sudo dnf install -y google-chrome-stable 
 sudo dnf install -y gnome-tweaks 
-sudo dnf install -y gwe 
 sudo dnf install -y inkscape 
 sudo dnf install -y code 
 sudo dnf install -y brasero 
