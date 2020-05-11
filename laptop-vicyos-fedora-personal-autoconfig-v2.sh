@@ -68,6 +68,13 @@ sudo cp -r *.jpg /usr/share/backgrounds/fedora-workstation
 gsettings set org.gnome.desktop.background picture-uri "/usr/share/backgrounds/fedora-workstation/74880.jpg"
 cd ../
 
+# Install XDownloader Manager: 
+cd random && tar -xf xdm*.tar.xz  && sudo ./install.sh && rm -r install.sh readme.txt && cd ../
+
+# Install SoundCloud Downloader:
+cd scdl && sudo pip3 install scdl && cd ../
+
+
 
 # Auto Apply Gnome Tweak Tool configs: (Will keep getting Rolling updates!) (If anything goes wrong, it'll break the System!)
 
@@ -81,6 +88,7 @@ cd ../
 
 # Set Github email and nickname:
 sudo sh ./upall/setup-git-v1.sh
+
 
 
 
