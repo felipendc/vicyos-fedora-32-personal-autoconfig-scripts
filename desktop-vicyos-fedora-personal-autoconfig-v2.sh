@@ -2,6 +2,8 @@
 
 # github.com/felipendc
 
+# First thing first: Got to Software and enable the repos that will suit my needs!
+
 # Update
 sudo dnf check-update -y
 sudo dnf upgrade --refresh -y
