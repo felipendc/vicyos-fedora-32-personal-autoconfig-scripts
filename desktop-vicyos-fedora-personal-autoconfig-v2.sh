@@ -36,7 +36,9 @@ sudo dnf install -y ffmpeg
 sudo dnf install -y clementine
 sudo dnf install -y filezilla
 sudo dnf install -y wine
-
+sudo dnf install -y deepin-screenshot
+sudo dnf install -y simplescreenrecorder
+sudo dnf install -y deepin-screen-recorder
 
 	
 
